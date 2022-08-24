@@ -1,3 +1,5 @@
+[![Build deb package with Docker image](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml/badge.svg)](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml)
+
 #+TITLE: emacs-gcc-pgtk - Dockerfile for building emacs.deb with native-comp and pure GTK
 
 * Summary
