@@ -3,7 +3,7 @@
 #+TITLE: emacs-gcc-pgtk - Dockerfile for building emacs.deb with native-comp and pure GTK
 
 
-[!][Build deb package with Docker image](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml/badge.svg)](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml)
+[![Build deb package with Docker image](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml/badge.svg)](https://github.com/helohe/emacs-gcc-pgtk/actions/workflows/deploy.yml)
 
 * Summary
 This repository shows a Dockerfile to create a emacs deb package with native compilation and pure GTK for Debian Testing. 
