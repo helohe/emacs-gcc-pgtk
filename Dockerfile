@@ -27,17 +27,18 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libxpm-dev \
     libtiff-dev \
     libjbig-dev \
-    libncurses-dev\
-    liblcms2-dev\
-    libwebp-dev\
-    libsqlite3-dev\
-    libxaw3dxft8-dev\
-    libharfbuzz-dev\
-    xaw3dg-dev\
-    libxpm-dev\
-    libjpeg-dev\
-    libjpeg62-turbo-dev\
-    libgmp-dev\    
+    libncurses-dev \
+    liblcms2-dev \
+    libwebp-dev \
+    libsqlite3-dev \
+    libxaw3dxft8-dev \
+    libharfbuzz-dev \
+    xaw3dg-dev \
+    libxpm-dev \
+    libjpeg-dev \
+    libjpeg62-turbo-dev \
+    libgmp-dev \  
+    mailutils-common \
     texinfo
 
 
@@ -52,6 +53,7 @@ RUN ./autogen.sh && ./configure \
     --prefix "/usr/local" \
     --with-native-compilation \
     --with-pgtk \
+    --with-mailutils \
     CFLAGS="-O2 -pipe"
 
 RUN make NATIVE_FULL_AOT=1 -j $(nproc)
@@ -69,6 +71,7 @@ Maintainer: helohe\n\
 Description: Emacs with native compilation and pure GTK\n\
     --with-native-compilation\n\
     --with-pgtk\n\
+    --with-mailutils\n\
  CFLAGS='-O2 -pipe'" \
     >> emacs-gcc-pgtk_${EMACS_VERSION}/DEBIAN/control \
     && dpkg-deb --build emacs-gcc-pgtk_${EMACS_VERSION} \
