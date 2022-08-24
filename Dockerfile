@@ -33,7 +33,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libsqlite3-dev\
     libxaw3dxft8-dev\
     libharfbuzz-dev\
-    libxaw3dg-dev\
+    xaw3dg-dev\
     libxpm-dev\
     libjpeg-dev\
     libjpeg62-turbo-dev\
