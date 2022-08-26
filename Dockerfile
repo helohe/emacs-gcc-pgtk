@@ -30,6 +30,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libncurses-dev \
     liblcms2-dev \
     libwebp-dev \
+    libwebkit2gtk-4.1-dev \
     libsqlite3-dev \
     libxaw3dxft8-dev \
     libharfbuzz-dev \
@@ -68,7 +69,7 @@ Version: ${EMACS_VERSION}\n\
 Section: base\n\
 Priority: optional\n\
 Architecture: amd64\n\
-Depends: libgif7, libotf1, libgccjit0, libm17n-0, libgtk-3-0, librsvg2-2, libtiff5, libjansson4, libacl1, libgmp10, libwebp7, libsqlite3-0\n\
+Depends: libgif7, libotf1, libgccjit0, libm17n-0, libgtk-3-0, librsvg2-2, libtiff5, libjansson4, libacl1, libgmp10, libwebp7, libwebkit2gtk-4.1-0, libsqlite3-0\n\
 Maintainer: helohe\n\
 Description: Emacs with native compilation and pure GTK\n\
     --with-native-compilation\n\
