@@ -20,3 +20,19 @@ jobs:
       with:
         name: emacs-gcc-pgtk
         path: ./deploy/emacs-gcc-pgtk_*.deb
+        
+    - name: Create repository
+      uses: jrandiny/apt-repo-action@v1
+      with:
+        github_token: ${{ secrets.PAT }}
+        arch: |
+          amd64
+          i386
+        version: |
+          bookworm
+          testing
+        file: ./deploy/emacs-gcc-pgtk_*.deb
+        file_target_version: testing
+        public_key: ${{ secrets.PUBLIC }}
+        private_key: ${{ secrets.PRIVATE }}
+        key_passphrase: ${{ secrets.SECRET }}
