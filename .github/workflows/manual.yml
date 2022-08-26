@@ -22,7 +22,7 @@ jobs:
         path: ./deploy/emacs-gcc-pgtk_*.deb
         
     - name: Create repository
-      uses: jrandiny/apt-repo-action@v1
+      uses: jrandiny/apt-repo-action@v2.0.1
       with:
         github_token: ${{ secrets.PAT }}
         arch: |
