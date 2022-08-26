@@ -42,6 +42,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libgmp-dev \  
     mailutils-common \
     libxi-dev \
+    libxext-dev \
     texinfo
 
 
