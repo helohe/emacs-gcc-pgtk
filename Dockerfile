@@ -41,6 +41,7 @@ RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list &&\
     libjpeg62-turbo-dev \
     libgmp-dev \  
     mailutils-common \
+    libxi-dev \
     texinfo
 
 
